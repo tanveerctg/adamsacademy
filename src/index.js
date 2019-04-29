@@ -2,7 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { faSearch,faShoppingBasket} from "@fortawesome/free-solid-svg-icons";
+import { library } from '@fortawesome/fontawesome-svg-core';
 import * as serviceWorker from './serviceWorker';
+
+library.add(
+   faSearch,
+   faShoppingBasket
+  );
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

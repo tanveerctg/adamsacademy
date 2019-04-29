@@ -1,0 +1,27 @@
+.navContainer{
+    background: ghostwhite;
+    // border-bottom:1px solid rgb(224, 224, 226);
+    // box-shadow: 5px 5px 5px rgb(224, 224, 226);
+
+}
+.nav{
+    width:1200px;
+    height:5rem;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.allCourses{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width:10rem;
+
+}
+.login{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:10rem;
+}

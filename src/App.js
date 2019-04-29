@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
-import Header from './Components/Header/Header';
+import Layout from './Components/Layout/Layout';
+import Home from './Components/Home/Home';
 
-
-function App() {
+function App(props) {
+ 
   return (
-    <div className="App">
-      <Header />
+    <div className="App" >
+      <Layout>
+        <Home />
+      </Layout>
     </div>
   );
 }
 
 export default App;
+
