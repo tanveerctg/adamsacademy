@@ -1,38 +1,26 @@
 import React, { Component } from 'react'
 import classes from './Layout.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import NavBar from '../NavBar/NavBar';
+import HamburgerIcon from '../HamburgerIcon/HamburgerIcon';
+import Modal from '../Modal/Modal';
 
 export default class Layout extends Component {
-
+  state={
+    toggle: false,
+    hamburgerToggle:false
+  }
+  hamburgerToggle=()=>{
+    const prev = this.state.hamburgerToggle;
+    this.setState({ hamburgerToggle: !prev });
+  }
   render() {
 
     return (
-      <div style={{height:'130vh'}}>
-        <nav className={classes.navContainer} >
-            <div  className={classes.nav}>
-                <div  className={classes.adamsacademyLogo}>
-                 <img src="https://www.adamsacademy.com/wp-content/uploads/2018/01/LOGO-web2.png" style={{width:'100%'}}/>
-                </div>
-                
-                <div className={classes.allCourses}>
-                  <h3 className={classes.courses}>All Courses</h3>
-                  <FontAwesomeIcon
-                  icon={['fas','search']}
-                  transform="grow-4" 
-                  className={classes.fontawesome}
-                  />
-                </div>
-                
-                <div className={classes.login}>
-                  <h3 className={classes.courses}>Log in</h3>
-                  <FontAwesomeIcon
-                  icon={['fas','shopping-basket']}
-                  transform="grow-4" 
-                  className={classes.fontawesome}
-                  />
-                </div>
-            </div>
-        </nav>
+      <div>
+        <HamburgerIcon hamburgerToggle={this.hamburgerToggle} on={this.state.hamburgerToggle}/>
+        {/* <Modal on={this.state.hamburgerToggle} toggle={this.hamburgerToggle}
+        /> */}
+        <NavBar />
         <main  >
             {this.props.children}
         </main>

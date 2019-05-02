@@ -1,0 +1,75 @@
+.container{
+    background: white;
+    position: relative;
+    z-index: 1000;
+    top:-8rem;
+}
+.title{
+    margin-bottom:.8rem;
+    text-transform: uppercase;
+    word-spacing: .07cm;
+}
+.subTitle{
+    text-align: center;
+    font-weight: 500;
+    padding: 0 1rem;
+}
+
+.padding_sm{
+    height:5rem;
+}
+.subjectsContainer{
+    display:flex;
+    justify-content: center;
+
+}
+.subjects{
+    width:1200px;
+    max-width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem,17rem));
+    grid-auto-rows: 13rem;
+    grid-gap:2rem;
+    justify-content: center;
+}
+.subject{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.subject h2{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    transition:opacity .2s .24s;
+}
+.subject span{
+    position: absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.8);
+    transform: translateY(-100%);
+    transition: transform .2s ease-in-out;
+    z-index: 1000;
+}
+.subject:hover span{
+    transform: translateY(0%);
+}
+.subject:hover span h2{
+    opacity: 1;
+}
+.subject:hover img{
+    transform: scale(1.2);
+}
+.title{
+    text-align: center;
+}
+.subject img{
+    width:100%;
+    height:100%;
+    transition: transform .5s;
+}

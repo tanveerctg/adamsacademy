@@ -1,8 +1,7 @@
 .home{
-    height:85vh;
     background: rgba(255,253,253,.9);
     position: relative;
-    overflow:hidden;
+    height:100vh;
 }
 .img1Container{
     position: absolute;
@@ -153,7 +152,7 @@
         right:8rem;
     }
     .img3Container{
-        bottom:-17rem;
+        bottom:-8rem;
         left:-10rem;
         width:550px;
      
@@ -175,16 +174,17 @@
     .img1Container{
         left:-18rem;
     }
-    .img3Container{
-        bottom:-20rem;
-        left:-12rem;
-        width:500px;
-    }
+
  }
  @media only screen and (max-width:799px) {
     .img2Container{
         width:400px;
         top:-7rem;
+    }
+    .img3Container{
+        bottom:-15rem;
+        left:-12rem;
+        width:500px;
     }
  }
  @media only screen and (max-width:650px) {
@@ -195,4 +195,5 @@
         padding:12px 20px;
         font-size: 12px;
     }
+
  }
