@@ -3,8 +3,8 @@ import './App.css';
 import Layout from './Components/Layout/Layout';
 import Home from './Components/Home/Home';
 
-function App(props) {
- 
+function App() {
+
   return (
     <div className="App" >
       <Layout>
