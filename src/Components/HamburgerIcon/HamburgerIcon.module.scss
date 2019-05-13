@@ -9,16 +9,16 @@
   height:30px;
   top:2%;
   right:5%;
-  z-index:2000;
+  z-index:5000;
   cursor: pointer;
   @include easeOut;
 
   & span{
     position: relative;
     display:block;
-    height:4px;
-    width:2rem;
-    background:black;;
+    height:3px;
+    width:1.8rem;
+    background:rgb(71, 71, 71);
     margin-top: 5.4px;
     transition: .1s;
     transition-delay: .1s;
@@ -32,14 +32,14 @@
     }
     span:nth-child(1){
       transform: rotate(45deg);
-      top:10px;
-      background:black;;
+      top:8px;
+      background:rgb(71, 71, 71);
       transition: .6s;
     }
     span:nth-child(3){
       transform: rotate(-45deg);
-      top:-9.3px;
-      background:black;;
+      top:-9px;
+      background:rgb(71, 71, 71);
       transition: .6s;
     }
   }

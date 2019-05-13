@@ -14,12 +14,12 @@ export default class Layout extends Component {
     this.setState({ hamburgerToggle: !prev });
   }
   render() {
-
+    console.log('hamburger',this.state.hamburgerToggle)
     return (
       <div>
         <HamburgerIcon hamburgerToggle={this.hamburgerToggle} on={this.state.hamburgerToggle}/>
-        {/* <Modal on={this.state.hamburgerToggle} toggle={this.hamburgerToggle}
-        /> */}
+        <Modal on={this.state.hamburgerToggle} toggle={this.hamburgerToggle}
+        />
         <NavBar />
         <main  >
             {this.props.children}

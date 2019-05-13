@@ -197,3 +197,15 @@
     }
 
  }
+ @media only screen and (max-width:400px) {
+    .img1Container{
+        left:-14rem;
+        width:380px;
+        top:-7rem;
+    }
+    .img2Container{
+        right:1rem;
+        width:350px;
+    }
+
+ }

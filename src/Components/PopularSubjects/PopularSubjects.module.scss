@@ -1,18 +1,20 @@
 .container{
-    background: white;
     position: relative;
     z-index: 1000;
     top:-8rem;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 .title{
     margin-bottom:.8rem;
     text-transform: uppercase;
     word-spacing: .07cm;
+    font-size:2.1rem;
 }
 .subTitle{
     text-align: center;
     font-weight: 500;
     padding: 0 1rem;
+    font-size:1.1rem;
 }
 
 .padding_sm{
@@ -35,8 +37,8 @@
 .subject{
     position: relative;
     overflow: hidden;
-    cursor: pointer;
-    
+    cursor: pointer; 
+    transition: all .1s; 
 }
 .subject h2{
     position: absolute;
@@ -45,6 +47,9 @@
     transform: translate(-50%,-50%);
     opacity:0;
     transition:opacity .2s .24s;
+    text-align:center;
+    text-transform: uppercase;
+    
 }
 .subject span{
     position: absolute;
@@ -72,4 +77,18 @@
     width:100%;
     height:100%;
     transition: transform .5s;
+}
+.subName{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,.9);
+    color:ghostwhite;
+    padding:10px 20px;
+    opacity: 1;
+    transition: width .1s ease-in;
+    text-transform: uppercase;
 }

@@ -17,55 +17,64 @@ function PopularSubjects() {
       <div className={classes.subjectsContainer}>
         <div className={classes.subjects}>
             <div className={classes.subject}>
+                <h3 className={classes.subName}>Technology</h3>
                 <span>
                     <h2>Technology</h2>
                 </span>       
                 <img src={pic1}/>
             </div>
             <div className={classes.subject}>
+                <h3 className={classes.subName}>Business</h3>
                 <span>
-                    <h2>Technology</h2>
+                    <h2>Business</h2>
                 </span>     
                 <img src={pic2}/>
             </div>
             <div className={classes.subject}>
+                <h3 className={classes.subName}>Photography</h3>
                 <span>
-                    <h2>Technology</h2>
+                    <h2>Photography</h2>
                 </span>       
                 <img src={pic3}/>
             </div>
             <div className={classes.subject}>
+                <h3 className={classes.subName}>Digital Marketing</h3>
                 <span>
-                    <h2>Technology</h2>
+                    <h2>Digital Marketing</h2>
                 </span>            
                 <img src={pic4}/>
             </div>
             <div className={classes.subject}>
+            <h3 className={classes.subName}>Travel & Tourism</h3>
                 <span>
-                    <h2>Technology</h2>
+                    <h2>Travel & Tourism</h2>
                 </span>            
                 <img src={pic2}/>
             </div>
             <div className={classes.subject}>
+                <h3 className={classes.subName}>Language</h3>
                 <span>
-                    <h2>Technology</h2>
+                    <h2>Language</h2>
                 </span> 
                 <img src={pic3}/>
             </div>
             <div className={classes.subject}>
+                <h3 className={classes.subName}>Health & Fitness</h3>
                 <span>
-                    <h2>Technology</h2>
+                    <h2>Health & Fitness</h2>
                 </span>
                 <img src={pic4}/>
             </div>
             <div className={classes.subject}>
+                <h3 className={classes.subName}>Project Management</h3>
                 <span>
-                    <h2>Technology</h2>
+                    <h2>Project Management</h2>
                 </span>  
                 <img src={pic4}/>
             </div>
         </div>
       </div>
+      <div className={classes.padding_sm}></div>
     </div>
   )
 }
